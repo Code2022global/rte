@@ -47,7 +47,7 @@ var server = app.listen(port, function(){
   console.log("Ung dung Node.js dang lang nghe tai dia chi: http://%s:%s", host, port)
 
 })
-console.log("windows -express")
+console.log("windows -test")
 
 var MongoClient = require('mongodb').MongoClient;
 
