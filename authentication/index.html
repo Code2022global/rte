@@ -1,0 +1,28 @@
+<html>
+<body>
+<div>
+<form action="http://127.0.0.1:8000/api/test/user" method="GET">
+First Name: <input type="text" name="first_name">  <br>
+
+Last Name: <input type="text" name="last_name">
+<input type="submit" value="Submit -get">
+</form>
+</div>
+
+<div>
+    <form action="http://127.0.0.1:8000/api/auth/signup" method="POST">
+    First Name: <input type="text" name="first_name">  <br>
+    Last Name: <input type="text" name="last_name">
+    user: <input type="text" name="username">  <br>
+    email: <input type="text" name="email">
+    password: <input type="text" name="password">  <br>
+    roles: <input type="text" name="roles">
+
+    <input type="submit" value="Submit -post">
+    </form>
+    </div>
+
+
+   
+</body>
+</html>
