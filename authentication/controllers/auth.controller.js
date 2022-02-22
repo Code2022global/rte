@@ -83,7 +83,9 @@ exports.signin = (req, res) => {
       for (let i = 0; i < user.roles.length; i++) {
         authorities.push("ROLE_" + user.roles[i].name.toUpperCase());
       }
-      res.status(200).send({
+      //res.redirect("/api/test/user");
+      res.setHeader("x-access-token",token);
+      res.status(200).json({
         id: user._id,
         username: user.username,
         email: user.email,

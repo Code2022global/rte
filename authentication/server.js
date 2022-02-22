@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // simple route
 app.get("/", (req, res) => {
   //res.json({ message: "Welcome to VNTALKING application." });
-  res.sendFile(__dirname+'/index.html');
+  res.sendFile(__dirname+'/views/enable2FA.html');
 });
 
 const dbConfig = require('./config/db.config')
